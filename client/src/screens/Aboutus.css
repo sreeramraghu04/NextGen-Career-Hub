@@ -1,0 +1,53 @@
+/* .abtimg
+{
+    width: 80%;
+    height: auto;
+  
+} */
+
+@media (max-width: 767px) {
+    #about-us-image {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    #about-us-image {
+      width: 120%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #about-us-image {
+      width: 90%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    #about-us-image {
+      width: 450px;
+    }
+  }
+  
+  
+  #Title {
+      opacity: 0;
+      transform: translateX(-250px);
+      transition: opacity 1s ease, transform 0.8s ease;
+    }
+    
+    #Title.fade-in {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  
+    #content {
+      opacity: 0;
+      transform: translateX(80px);
+      transition: opacity 1s ease, transform 2s ease;
+    }
+    
+    #content.fade-in {
+      opacity: 1;
+      transform: translateX(0);
+    }

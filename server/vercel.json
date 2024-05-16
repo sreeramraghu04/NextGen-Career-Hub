@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "nodemon ./index.js --exec babel-node",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "nodemon ./index.js --exec babel-node"
+        }
+    ]
+  }

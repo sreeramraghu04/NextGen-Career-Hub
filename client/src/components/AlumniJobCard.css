@@ -1,0 +1,19 @@
+.smalltext {
+  font-size:small;
+} 
+
+  .jobCard {
+    padding: 8%;
+    /* border: 1px solid black; */
+  }
+
+  .job-card {
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+  
+  .job-card.hovered {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 25px 25px 25px 25px;
+  }
